@@ -1,8 +1,8 @@
+#This Python Program inputs a Year and Month and Outputs Calendar for the corresponding values
+
 import time, calendar
 
-#Local Time
-tim = time.asctime(time.localtime(time.time()))
-import time, calendar
+#Month Name Function
 def name(s):
     if s == 1:
         return "January"
@@ -37,7 +37,6 @@ print("Local time on Machine on Execution: {}".format(tim))
 year = int(input("Enter year of Calendar: "))
 month = int(input("Enter Month of Calendar: "))
 monthname = name(month)
-
 cal = calendar.month(year, month)
-print("\n\nCalendar For the month of {} and year of {}\n".format(monthname,year))
+print("\n\nCalendar For the month of {}, {}\n".format(monthname,year))
 print(cal)
